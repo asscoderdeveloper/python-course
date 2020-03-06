@@ -11,6 +11,16 @@ TAMAÑO_BARRA_DE_VIDA = 20
 vida_pikachu = VIDA_INICIAL_PIKACHU
 vida_squirtle = VIDA_INICIAL_SQUIRTLE
 
+def barra_vida_pikachu():
+    barra_de_vida_pikachu = int(vida_pikachu * TAMAÑO_BARRA_DE_VIDA / VIDA_INICIAL_PIKACHU)
+    print("Pikachu:    [{}{}] ({}/{})".format("*" * barra_de_vida_pikachu,
+                                              " " * (TAMAÑO_BARRA_DE_VIDA - barra_de_vida_pikachu), vida_pikachu,
+                                              VIDA_INICIAL_PIKACHU))
+def barra_vida_squirtle():
+    barra_de_vida_squirtle = int(vida_squirtle * TAMAÑO_BARRA_DE_VIDA / VIDA_INICIAL_SQUIRTLE)
+    print("Squirtle:   [{}{}] ({}/{})".format("*" * barra_de_vida_squirtle,
+                                              " " * (TAMAÑO_BARRA_DE_VIDA - barra_de_vida_squirtle), vida_squirtle,
+                                              VIDA_INICIAL_SQUIRTLE))
 while vida_pikachu > 0 and vida_squirtle > 0:
 
     #Turno de Pikachu
@@ -37,11 +47,9 @@ while vida_pikachu > 0 and vida_squirtle > 0:
     elif vida_pikachu < 0:
         vida_pikachu = 0
 
-    barra_de_vida_pikachu = int(vida_pikachu * TAMAÑO_BARRA_DE_VIDA/ VIDA_INICIAL_PIKACHU)
-    print("Pikachu:    [{}{}] ({}/{})".format("*" * barra_de_vida_pikachu, " " * (TAMAÑO_BARRA_DE_VIDA - barra_de_vida_pikachu), vida_pikachu, VIDA_INICIAL_PIKACHU))
+    barra_vida_pikachu()
 
-    barra_de_vida_squirtle = int(vida_squirtle * TAMAÑO_BARRA_DE_VIDA/ VIDA_INICIAL_SQUIRTLE)
-    print("Squirtle:   [{}{}] ({}/{})".format("*" * barra_de_vida_squirtle, " " * (TAMAÑO_BARRA_DE_VIDA - barra_de_vida_squirtle), vida_squirtle, VIDA_INICIAL_SQUIRTLE))
+    barra_vida_squirtle()
 
     input("Enter para continuar ...\n\n")
     os.system("cls")
@@ -82,13 +90,9 @@ while vida_pikachu > 0 and vida_squirtle > 0:
     elif vida_pikachu < 0:
         vida_pikachu = 0
 
-    barra_de_vida_pikachu = int(vida_pikachu * TAMAÑO_BARRA_DE_VIDA / VIDA_INICIAL_PIKACHU)
-    print("Pikachu:    [{}{}] ({}/{})".format("*" * barra_de_vida_pikachu, " " * (TAMAÑO_BARRA_DE_VIDA - barra_de_vida_pikachu),
-                                              vida_pikachu, VIDA_INICIAL_PIKACHU))
+    barra_vida_pikachu()
 
-    barra_de_vida_squirtle = int(vida_squirtle * TAMAÑO_BARRA_DE_VIDA / VIDA_INICIAL_SQUIRTLE)
-    print("Squirtle:   [{}{}] ({}/{})".format("*" * barra_de_vida_squirtle, " " * (TAMAÑO_BARRA_DE_VIDA - barra_de_vida_squirtle),
-                                              vida_squirtle, VIDA_INICIAL_SQUIRTLE))
+    barra_vida_squirtle()
 
     input("Enter para continuar...")
     os.system("cls")
