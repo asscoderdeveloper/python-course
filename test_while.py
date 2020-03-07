@@ -99,10 +99,10 @@ while vida_pikachu > 0 and vida_squirtle > 0:
 
 if vida_pikachu > vida_squirtle:
     print("\n"
-          "Ha gando Pikachu")
+          "Ha gando Pikachu...")
 else:
     print("\n"
-          "Ha ganado squirtle")
+          "Ha ganado squirtle...")
         
 
 
