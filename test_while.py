@@ -31,7 +31,7 @@ while vida_pikachu > 0 and vida_squirtle > 0:
     if ataque_cpu == 1:
         print("Pikachu ha usado impactrueno"
               "\n")
-        vida_squirtle -= 30
+        vida_squirtle -= 20
     elif ataque_cpu == 2:
         print("Pikachu ha usado rayo"
               "\n")
