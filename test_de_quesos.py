@@ -42,18 +42,11 @@ else:
     print("Las opciones posibles son: A, B y C")
     exit()
 print("Pregunta 4: ")
-pregunta4 = input("¿Qué es eso? (A ??? / "
-                  "B no lo entiendo / "
-                  "C eso es queso)")
-if pregunta4 == "A":
-    puntuacion += 0
-elif pregunta4 == "B":
-    puntuacion += 5
-elif pregunta4 == "C":
+pregunta4 = input("¿Qué es eso?")
+if pregunta4 == "Queso":
     puntuacion += 10
 else:
-    print("Las opciones posibles son: A, B y C")
-    exit()
+    pass
 if puntuacion >= 20:
     print("\n" + "Eres un amante del queso")
 elif 20<puntuacion<40:
